@@ -6,7 +6,7 @@ public class ResizableRectangle extends Rectangle implements Resizable{
     }
 
     public void resize(int percent){
-        this.length = ((percent / 100) * this.length) + this.length;
-        this.width = ((percent / 100) * this.width) + this.width;
+        super.length = ((percent / 100) * super.length) + super.length;
+        super.width = ((percent / 100) * super.width) + super.width;
     }
 }
