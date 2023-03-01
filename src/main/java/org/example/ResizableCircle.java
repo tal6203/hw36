@@ -5,6 +5,6 @@ public class ResizableCircle extends Circle implements Resizable{
         super(radius);
     }
     public void resize(int percent){
-       this.radius = ((percent / 100) * this.radius) + this.radius;
+       super.radius = ((percent / 100) * super.radius) + super.radius;
     }
 }
